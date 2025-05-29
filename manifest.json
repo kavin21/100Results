@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Google 100 Results Redirect",
+  "version": "1.0",
+  "description": "Automatically adds &num=100 to Google search queries.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://www.google.com/*"
+  ],
+  "action": {
+    "default_title": "Google 100 Results Redirect"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "redirect_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
